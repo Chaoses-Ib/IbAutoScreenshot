@@ -34,7 +34,7 @@ namespace IbAutoScreenshot
             */
 
             var infos = new DirectoryInfo("Screenshots").GetFileSystemInfos();
-            if (infos.Length >= 10)
+            if (infos.Length >= 240)
             {
                 var fileInfo = infos.OrderBy(fi => fi.CreationTime).First();
                 fileInfo.Delete();
